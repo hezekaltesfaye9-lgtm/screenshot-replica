@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Mail } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { Logo } from "./Logo";
-import { NAV_ITEMS } from "./SiteHeader";
+import { NAV_ITEMS } from "./nav";
 
 export function SiteFooter() {
   const { t } = useI18n();

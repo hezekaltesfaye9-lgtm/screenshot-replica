@@ -7,15 +7,8 @@ import { useI18n } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { Logo } from "./Logo";
+import { NAV_ITEMS } from "./nav";
 
-export const NAV_ITEMS = [
-  { to: "/", key: "home" },
-  { to: "/bible", key: "bible" },
-  { to: "/prayer", key: "prayer" },
-  { to: "/devotionals", key: "devotionals" },
-  { to: "/study", key: "study" },
-  { to: "/growth", key: "growth" },
-] as const;
 
 export function SiteHeader() {
   const { t } = useI18n();
