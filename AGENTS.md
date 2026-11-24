@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- UI strings live in `src/lib/i18n.tsx` (Amharic + English dictionaries, same shape); components read them via `useI18n()` — keeps both languages in sync.
+- Scripture data lives in `src/data/`; never hand-write verse text for a translation without a verified source — leave it empty so the UI shows a "not connected" state.
+- On-device data (prayers, bookmarks, progress) goes through `createLocalValue` stores in `src/lib/growth.ts` — this is the single seam to swap for Lovable Cloud tables when accounts arrive.
